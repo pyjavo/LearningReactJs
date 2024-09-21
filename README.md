@@ -18,10 +18,7 @@ En este repositorio, aprenderás a crear componentes, manejar el estado y realiz
    ```bash  
    git clone https://github.com/JeysonLamb/Learning-React.JS--0-100.git
 
-2. Navega al directorio del proyecto:  
-   ```bash  
-   cd Learning-React.JS--0-100  
-3. Instala las dependencias:  
+2. Instala las dependencias:  
    ```bash  
    npm install  
 # Uso
