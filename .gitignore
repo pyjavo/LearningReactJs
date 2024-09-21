@@ -15,7 +15,6 @@ build/
 logs
 *.log
 npm-debug.log*
-
 # Dependency directories
 jspm_packages/
 
