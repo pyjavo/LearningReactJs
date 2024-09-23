@@ -22,7 +22,8 @@ En este repositorio, aprenderás a crear componentes, manejar el estado y realiz
    ```bash
    npm install
 
-   Uso
+
+Uso
 Para ejecutar el proyecto en modo de desarrollo:
  ```bash
 npm start
