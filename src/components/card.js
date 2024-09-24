@@ -1,19 +1,23 @@
-import React, { useState } from "react";
-import "./carta.css";
-
-function Card({ name, image, status }) {
-  const [showStatus, setShowStatus] = useState(false);
-
-  const handleClick = () => {
-    setShowStatus(!showStatus); // Alternar visibilidad del estado
-  };
-
+import React from "react";
+import "./carta.css"; // Importa el archivo CSS
+const Card = ({ name, image, index, cambiarImagen, CambiarText }) => {
   return (
-    <div className="card" onClick={handleClick}> {/* Agregar manejador de clic */}
-      <img src={image} alt={name} />
-      <h2>{name}</h2>
-      {showStatus && <p>{status}</p>} {/* Mostrar el estado si showStatus es true */}
+    <div className="card-container">
+      <img
+        onClick={(e) => cambiarImagen(e)}
+        src={image}
+        alt={name}
+        data-index={index}
+      />
+      <div
+        onClick={(e) => CambiarText(e)}
+        className="name"
+        data-index={index}
+      >
+        {name}
+      </div>
     </div>
   );
-}
+};
+
 export default Card;

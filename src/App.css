@@ -1,12 +1,55 @@
 * {
+  margin: 0%;
   box-sizing: border-box;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #b1afab;
+    background-color: #f2e1b8;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.App {
   display: grid;
-  justify-content: center;
-  height: 100vh;
-  margin-top: 50px;
+  grid-template-columns: repeat(5, 1fr); /* Crea 3 columnas */
+  gap: 20px; /* Espacio entre las tarjetas */
+  max-width: 900px; /* Ajusta el ancho máximo para que quepan 3 tarjetas por fila */
+  margin: 0 auto; /* Centra el contenedor */
+  padding-right: 0%;
+}
+
+.card-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-container:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.card-container img {
+  width: 100%;
+  height: auto; /* Ajuste proporcional de la imagen */
+  max-height: 300px; /* Limita la altura máxima de las imágenes */
+  border-radius: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.name {
+  font-size: 1.2em;
+  color: #3e2815;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.name:hover {
+  color: #a95c2a; /* Color al pasar el ratón sobre el nombre */
 }
