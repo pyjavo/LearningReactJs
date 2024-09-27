@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import Card from "./components/Card.js"; 
+import Card from "./components/card.js"; 
 import characters from "./components/CharacterList"; // Import sin llaves
 
 function App() {
